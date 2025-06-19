@@ -21,13 +21,27 @@
 
 /* Custom global styles for the edgy theme */
 body {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  background-size: 20px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode styles (default) */
+body {
   background-color: #111827;
   color: white;
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
   background-image: 
     linear-gradient(45deg, transparent 40%, rgba(255, 7, 58, 0.03) 50%, transparent 60%),
     linear-gradient(-45deg, transparent 40%, rgba(0, 245, 255, 0.03) 50%, transparent 60%);
-  background-size: 20px 20px;
+}
+
+/* Light mode styles will be handled by React state - keeping this for fallback */
+.light-mode body {
+  background-color: #f9fafb;
+  color: #1f2937;
+  background-image: 
+    linear-gradient(45deg, transparent 40%, rgba(255, 7, 58, 0.08) 50%, transparent 60%),
+    linear-gradient(-45deg, transparent 40%, rgba(0, 245, 255, 0.08) 50%, transparent 60%);
 }
 
 /* Custom scrollbar */
