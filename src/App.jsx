@@ -138,9 +138,6 @@ function App() {
               }`}>
               {"> Chrome extension for job seekers who've lost all hope_"}
             </p>
-            <p className="text-xs md:text-sm text-purple-400 mt-2 animate-pulse">
-              WARNING: May cause existential crisis and uncontrollable laughter
-            </p>
           </div>
         </header>
 
@@ -243,14 +240,6 @@ function App() {
           </h2>
           
           <div className="space-y-6 text-left md:text-center">
-            <p className={`text-lg md:text-xl leading-relaxed font-mono ${
-              isDarkMode ? 'text-gray-300' : 'text-gray-700'
-            }`}>
-              {"> SYSTEM STATUS: COMPLETELY BROKEN"}<br/>
-              {"> HOPE LEVEL: 404 NOT FOUND"}<br/>
-              {"> SANITY: DEPRECATED"}
-            </p>
-            
             <p className={`text-base md:text-lg leading-relaxed ${
               isDarkMode ? 'text-gray-400' : 'text-gray-600'
             }`}>
@@ -300,11 +289,6 @@ function App() {
           }`}>
             <p className="text-purple-500 font-bold text-lg md:text-xl" style={{fontFamily: 'Orbitron, sans-serif'}}>
               REMEMBER: YOU'RE NOT UNEMPLOYED, YOU'RE STRATEGICALLY UNENCUMBERED
-            </p>
-            <p className={`text-sm mt-2 font-mono ${
-              isDarkMode ? 'text-gray-400' : 'text-gray-600'
-            }`}>
-              * Side effects may include: existential dread, uncontrollable laughter, and sudden urges to start your own company
             </p>
           </div>
         </div>
