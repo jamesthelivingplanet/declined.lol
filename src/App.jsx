@@ -10,7 +10,7 @@ function App() {
       id: 1,
       src: 'https://cdn.discordapp.com/attachments/618217463435493388/1385323622142443604/home.png?ex=6855a6a9&is=68545529&hm=047122488dba7939685102298bfcec17751ca2d11801a2be16aa11fc7cc74d13&',
       alt: 'DECLINED.LOL - Main Interface',
-      title: 'SYSTEM.EXE HAS STOPPED WORKING',
+      title: 'APPLICATION HISTORY TRACKER',
       description: 'When HR says "we\'ll keep your resume on file" - we keep track of your digital footprint.',
       mood: 'RAGE LEVEL: MAXIMUM'
     },
@@ -18,7 +18,7 @@ function App() {
       id: 2,
       src: 'https://cdn.discordapp.com/attachments/618217463435493388/1385323622411014348/key-words.png?ex=6855a6a9&is=68545529&hm=8de92f45721c0681bab9424e7aa35f6228d84c3e374aae3bc63c799939ed2aa8&',
       alt: 'DECLINED.LOL - Rejection Analytics',
-      title: 'REJECTION COUNTER 9000',
+      title: 'CORPORATE BULLSH*T TRANSLATOR',
       description: 'Get job keywords that trigger your existential dread.',
       mood: 'NIHILISM ACTIVATED'
     },
@@ -26,7 +26,7 @@ function App() {
       id: 3,
       src: 'https://cdn.discordapp.com/attachments/618217463435493388/1385323622788239400/provider.png?ex=6855a6a9&is=68545529&hm=da9f400e262730e602db396f1966354cdeaf8ba42495faaf92be89a7b38c9a66&',
       alt: 'DECLINED.LOL - Dark Mode Features',
-      title: 'CORPORATE BULLSH*T TRANSLATOR',
+      title: 'ARTIFICIAL INTELLIGENCE, INJECTOR',
       description: 'Configure your AI and API key to decode the lies of the job market.',
       mood: 'TRUTH UNLEASHED'
     },
@@ -196,11 +196,11 @@ function App() {
                   }`}>
                     {screenshots[currentIndex].description}
                   </p>
-                  <div className={`inline-block px-4 py-2 bg-purple-500 font-bold text-sm rounded border-2 animate-pulse ${
+                  {/* <div className={`inline-block px-4 py-2 bg-purple-500 font-bold text-sm rounded border-2 animate-pulse ${
                     isDarkMode ? 'text-black border-white' : 'text-white border-black'
                   }`}>
                     {screenshots[currentIndex].mood}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -227,7 +227,7 @@ function App() {
                 className="px-6 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-bold text-sm md:text-base transition-all duration-200 font-mono tracking-wide hover:animate-pulse"
                 onClick={toggleAutoPlay}
               >
-                [{isAutoPlaying ? 'PAUSE' : 'RESUME'}] AUTO-DESTRUCTION
+                [{isAutoPlaying ? 'PAUSE' : 'RESUME'}]
               </button>
             </div>
           </div>
@@ -270,15 +270,15 @@ function App() {
               }`}
               style={{fontFamily: 'Orbitron, sans-serif'}}
             >
-              INSTALL & EMBRACE THE VOID
+              INSTALL & CONTROL YOUR FATE
             </a>
-            <a 
+            {/* <a 
               href="#" 
               className="px-8 py-4 bg-transparent border-4 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-black text-lg md:text-xl transition-all duration-200 tracking-wide"
               style={{fontFamily: 'Orbitron, sans-serif'}}
             >
               LEARN MORE SUFFERING
-            </a>
+            </a> */}
           </div>
           
           {/* Final message */}
