@@ -11,7 +11,7 @@ function App() {
       src: 'https://cdn.discordapp.com/attachments/618217463435493388/1385323622142443604/home.png?ex=6855a6a9&is=68545529&hm=047122488dba7939685102298bfcec17751ca2d11801a2be16aa11fc7cc74d13&',
       alt: 'DECLINED.LOL - Main Interface',
       title: 'APPLICATION HISTORY TRACKER',
-      description: 'When HR says "we\'ll keep your resume on file" - we keep track of your digital footprint.',
+      description: 'They keep your resume "on file" - we keep track of your rejections.',
       mood: 'RAGE LEVEL: MAXIMUM'
     },
     {
@@ -150,17 +150,19 @@ function App() {
               
               {/* Image container */}
               <div className="relative group">
-                <img 
-                  src={screenshots[currentIndex].src} 
-                  alt={screenshots[currentIndex].alt}
-                  className={`w-full h-64 md:h-96 lg:h-[500px] object-cover transition-all duration-300 ${
-                    glitchActive ? 'animate-pulse' : ''
-                  } group-hover:scale-105`}
-                  onError={(e) => {
-                    const bgColor = isDarkMode ? '1f2937' : 'f3f4f6'
-                    e.target.src = `https://via.placeholder.com/1200x800/${bgColor}/ef4444?text=${encodeURIComponent(screenshots[currentIndex].title)}`
-                  }}
-                />
+                <div className="w-full h-64 md:h-96 lg:h-[500px] bg-gray-700 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={screenshots[currentIndex].src} 
+                    alt={screenshots[currentIndex].alt}
+                    className={`w-full h-full object-cover transition-all duration-300 ${
+                      glitchActive ? 'animate-pulse' : ''
+                    } group-hover:scale-105`}
+                    onError={(e) => {
+                      const bgColor = isDarkMode ? '1f2937' : 'f3f4f6'
+                      e.target.src = `https://via.placeholder.com/1200x800/${bgColor}/ef4444?text=${encodeURIComponent(screenshots[currentIndex].title)}`
+                    }}
+                  />
+                </div>
                 
                 {/* Navigation buttons - More aggressive styling */}
                 <button 
@@ -292,6 +294,94 @@ function App() {
             </p>
           </div>
         </div>
+
+        {/* Footer Section - Product Info with Edgy Theme */}
+        <footer className={`mt-16 border-t-4 border-red-500 pt-12 transition-all duration-300 ${
+          isDarkMode ? 'bg-gray-900' : 'bg-gray-100'
+        }`}>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-black text-red-500 mb-8 glitch-text" 
+                data-text="DECLINED"
+                style={{fontFamily: 'Orbitron, sans-serif'}}>
+              DECLINED
+            </h2>
+            
+            <div className={`border-2 border-cyan-400 rounded-lg p-8 mb-8 transition-all duration-300 ${
+              isDarkMode ? 'bg-gray-800' : 'bg-white'
+            }`}>
+              <h3 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-6" style={{fontFamily: 'Orbitron, sans-serif'}}>
+                WEAPONIZE YOUR JOB HUNT
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className={`p-4 border border-red-500 rounded ${
+                  isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
+                }`}>
+                  <h4 className="text-red-500 font-bold mb-2 font-mono">CORE FEATURES:</h4>
+                  <ul className={`space-y-2 text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    <li>• Track your digital rejection history</li>
+                    <li>• AI-powered resume optimization</li>
+                    <li>• Corporate BS keyword analysis</li>
+                    <li>• Job posting decryption tools</li>
+                  </ul>
+                </div>
+                
+                <div className={`p-4 border border-purple-500 rounded ${
+                  isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
+                }`}>
+                  <h4 className="text-purple-500 font-bold mb-2 font-mono">SURVIVAL STATS:</h4>
+                  <ul className={`space-y-2 text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    <li>• Version 1.0.0 - Born from pain</li>
+                    <li>• Made with 💀 for digital warriors</li>
+                    <li>• Powered by existential dread</li>
+                    <li>• Endorsed by rejected applicants worldwide</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <p className={`mt-6 text-lg font-mono ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                This extension uses AI to analyze job postings and help you optimize your resume for each application.
+                <br />
+                <span className="text-red-500 font-bold">Translation: We turn your desperation into data.</span>
+              </p>
+            </div>
+            
+            {/* Support Section */}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+              <a 
+                href="https://buymeacoffee.com/curielrommg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-orange-500 hover:bg-orange-700 text-white font-bold text-lg border-2 border-white transition-all duration-200 hover:animate-pulse"
+                style={{fontFamily: 'Orbitron, sans-serif'}}
+              >
+                ☕ FUEL THE CHAOS
+              </a>
+              
+              <div className={`text-center ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                <p className="font-mono text-sm">
+                  Support questions? Submit to the void:
+                </p>
+                <a 
+                  href="mailto:jobtrackerassistant.stark394@passinbox.com"
+                  className="text-cyan-400 hover:text-cyan-300 underline font-mono text-sm"
+                >
+                  jobtrackerassistant.stark394@passinbox.com
+                </a>
+              </div>
+            </div>
+            
+            {/* Final Footer Message */}
+            <div className={`border-t-2 border-red-500 pt-6 ${isDarkMode ? 'text-gray-500' : 'text-gray-400'}`}>
+              <p className="font-mono text-sm">
+                © {new Date().getFullYear()} DECLINED.LOL - Where hope goes to die and resumes go to multiply
+              </p>
+              <p className="font-mono text-xs mt-2 text-red-500">
+                [ WARNING: Side effects may include increased cynicism and decreased faith in humanity ]
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   )
