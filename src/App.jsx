@@ -374,10 +374,7 @@ function App() {
             {/* Final Footer Message */}
             <div className={`border-t-2 border-red-500 pt-6 ${isDarkMode ? 'text-gray-500' : 'text-gray-400'}`}>
               <p className="font-mono text-sm">
-                © {new Date().getFullYear()} DECLINED.LOL - Where hope goes to die and resumes go to multiply
-              </p>
-              <p className="font-mono text-xs mt-2 text-red-500">
-                [ WARNING: Side effects may include increased cynicism and decreased faith in humanity ]
+                © {new Date().getFullYear()} DECLINED.LOL
               </p>
             </div>
           </div>
