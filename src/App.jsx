@@ -363,10 +363,10 @@ function App() {
                   Support questions? Submit to the void:
                 </p>
                 <a 
-                  href="mailto:jobtrackerassistant.stark394@passinbox.com"
+                  href="mailto:support@declined.lol"
                   className="text-cyan-400 hover:text-cyan-300 underline font-mono text-sm"
                 >
-                  jobtrackerassistant.stark394@passinbox.com
+                  support@declined.lol
                 </a>
               </div>
             </div>
