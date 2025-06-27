@@ -266,7 +266,9 @@ function App() {
           {/* CTA Buttons - Aggressive and sarcastic */}
           <div className="flex flex-col md:flex-row gap-4 justify-center mt-12">
             <a 
-              href="#" 
+              href="https://chromewebstore.google.com/detail/declined/biihjkfmfadnphimmgdiebhdocpacogp?pli=1" 
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-8 py-4 bg-red-500 hover:bg-red-700 text-white font-black text-lg md:text-xl border-4 hover:border-cyan-400 transition-all duration-200 animate-pulse hover:animate-bounce tracking-wide ${
                 isDarkMode ? 'border-white' : 'border-black'
               }`}
